@@ -32,7 +32,8 @@ li {
   list-style: none;
 }
 
-a {
+a, Link {
+  color: var(--foreground-rgb);
   text-decoration: none;
 }
 
@@ -43,6 +44,7 @@ body {
   padding: 0rem 2rem 0rem 2rem;
   overflow-x: hidden;
 }
+
 
 body {
   color: var(--foreground-rgb);
@@ -59,6 +61,11 @@ h1 {
 }
 h2 {
   font-family: var(--font-paragraph);
+  font-size: 2rem;
+}
+
+h6 {
+  font-weight: 700;
   font-size: 2rem;
 }
 @media (prefers-color-scheme: dark) {

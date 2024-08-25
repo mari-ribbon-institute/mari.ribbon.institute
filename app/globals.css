@@ -1,75 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fira+Code:wght@300..700&display=swap');
 
-:root {
-  --max-width: 1400px;
-  --border-radius: 12px;
-  --font-title: "Bungee", serif;
-  --font-paragraph: "Fira Code", monospace;
-
-  --foreground-rgb: #000000;
-  --background-rgb: #FCF5ED;
-  
-  --primary-rgb: #ec6363;
-  --secondary-rgb: #F4BF96;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: #ffffff;
-    --background-rgb: #2E4374;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: var(--font-paragraph);
-}
-
-li {
-  list-style: none;
-}
-
-a, Link {
-  color: var(--foreground-rgb);
-  text-decoration: none;
-}
-
-html,
-body {
-  margin: 0 auto;
-  max-width: var(--max-width);
-  padding: 0rem 2rem 0rem 2rem;
-  overflow-x: hidden;
-}
-
-
-body {
-  color: var(--foreground-rgb);
-  background: var(--background-rgb);
-}
-h1 {
-  font-family: var(--font-title);
-  font-size: 5rem;
-  font-weight: 300;
-  letter-spacing: 1rem;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
-  z-index: 2;
-  transition: all 0.3s ease-in-out;
-}
-h2 {
-  font-family: var(--font-paragraph);
-  font-size: 2rem;
 }
 
-h6 {
-  font-weight: 700;
-  font-size: 2rem;
+section, main {
+  margin-bottom: 1.5rem;
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+

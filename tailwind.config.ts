@@ -18,11 +18,7 @@ const config: Config = {
         '2xl': '14rem'
       }
     },
-    fontSize: {
-      title: '5rem',
-      navigation: '1.2rem',
-      paragraph: '1rem',
-    },
+    
     colors: {
       'light-foreground': '#000000',
       'light-background': '#FCF5ED',
